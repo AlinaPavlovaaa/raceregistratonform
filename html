@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race Registration Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Race Registration Form</h1>
+    <form action="/submit" method="post" id="registrationForm">
+        
+<!--        EMAIL-->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+      </div>
+        
+<!--        TITLE-->
+      <div class="mb-3">
+        <label for="title" class="form-label">Title- </label>
+          <span class="space"></span>
+        <input type="checkbox" id="mr" name="title" value="Mr.">
+        <label for="mr">Mr.</label>
+          <span class="space"></span>
+        <input type="checkbox" id="mrs" name="title" value="Mrs.">
+        <label for="mrs">Mrs.</label>
+          <span class="space"></span>
+        <input type="checkbox" id="ms" name="title" value="Ms.">
+        <label for="ms">Ms.</label>
+      </div>
+        
+<!--        enter name and last name-->
+
+        <div class="mb-3">
+  <label for="firstName" class="form-label-inline">First Name</label>
+  <input type="text" class="form-control-inline" id="firstName" name="firstName" placeholder="Your first name">
+  <span class="separator"> </span>
+  <label for="lastName" class="form-label-inline">Last Name</label>
+  <input type="text" class="form-control-inline" id="lastName" name="lastName" placeholder="Your last name">
+</div>
+        
+<!--        EMAIL         -->
+      <div class="mb-3">
+        <label for="address" class="form-label">Complete Postal Mailing Address</label>
+        <textarea class="form-control" id="address" name="address" rows="3"
+          placeholder="Your complete postal mailing address"></textarea>
+      </div>
+        
+<!--        PHONE AND FAX-->
+
+        <div class="mb-3">
+  <label for="phone" class="form-label-inline">Phone</label>
+  <input type="tel" class="form-control-inline" id="phone" name="phone" placeholder="Your phone number">
+  <span class="separator"> </span>
+  <label for="fax" class="form-label-inline">Fax</label>
+  <input type="tel" class="form-control-inline" id="fax" name="fax" placeholder="Your fax number">
+</div>
+
+
+<!--            OCCUPATION AND MARITAL STATUS-->
+
+        <div class="mb-3">
+  <label for="occupation" class="form-label-inline">Occupation</label>
+  <input type="text" class="form-control-inline" id="occupation" name="occupation" placeholder="Your occupation">
+  <span class="separator"> </span>
+  <label for="maritalStatus" class="form-label-inline">Marital Status</label>
+  <input type="text" class="form-control-inline" id="maritalStatus" name="maritalStatus" placeholder="Your marital status">
+</div>
+        
+<!--        TRIP-->
+        <div class="mb-3">
+  <label for="trip" class="form-label">Select Trip - </label><br>
+  <input type="radio" id="stageRace" name="trip" value="Stage Race"> 
+  <label for="stageRace">Stage Race</label> 
+            <span class="space"></span>
+  <input type="radio" id="everestMarathon" name="trip" value="Mt. Everest Challenge Marathon (4 days)">
+  <label for="everestMarathon">Mt. Everest Challenge Marathon (4 days)</label>
+             <span class="space"></span>
+  <input type="radio" id="everestBikeRally" name="trip" value="Mt. Everest Bike Rally">
+  <label for="everestBikeRally">Mt. Everest Bike Rally</label>
+</div>
+        
+<!--        I AM- -->
+
+          <div class="mb-3">
+  <label for="participantType" class="form-label">I am a </label>
+            <span class="space"></span>
+  <input type="checkbox" id="runner" name="participantType" value="Runner">
+  <label for="runner">Runner</label>
+            <span class="space"></span>
+  <input type="checkbox" id="walker" name="participantType" value="Walker">
+  <label for="walker">Walker</label>
+            <span class="space"></span>
+  <input type="checkbox" id="cyclist" name="participantType" value="Cyclist">
+  <label for="cyclist">Cyclist</label>
+</div>
+
+<!--                    T SHIRT SIZE-->
+
+            <div class="mb-3">
+        <label for="tshirtsize" class="form-label">T-Shirt Size</label>
+                <span class="space"></span>
+        <input type="checkbox" id="small" name="tshirtsize" value="Small">
+        <label for="Small">Small</label>
+                <span class="space"></span>
+        <input type="checkbox" id="Medium" name="tshirtsize" value="Medium">
+        <label for="Medium">Medium</label>
+                <span class="space"></span>
+        <input type="checkbox" id="large" name="tshirtsize" value="Large">
+        <label for="Large">Large</label>
+                <span class="space"></span>
+        <input type="checkbox" id="xlarge" name="tshirtsize" value="xLarge">
+        <label for="Large">X-Large</label>
+      </div>  
+              
+<!--              SMOKER-->
+      
+      <div class="mb-3">
+        <label for="smoker" class="form-label">Smoker</label>
+          <span class="space"></span>
+        <input type="radio" id="smokerYes" name="smoker" value="Yes">
+        <label for="smokerYes">Yes</label>
+          <span class="space"></span>
+        <input type="radio" id="smokerNo" name="smoker" value="No">
+        <label for="smokerNo">No</label>
+      </div>
+      
+          
+<!--          Room Sharing Preference-->
+        <div class="mb-3">
+        <label for="roomSharing" class="form-label">Room Sharing Preference</label>
+        <input type="text" class="form-control" id="roomSharing" name="roomSharing"
+          placeholder="Your room sharing preference">
+      </div>
+        
+        
+<!--        Passport Details-->
+      <div class="mb-3">
+        <h4>Passport Details</h4>
+      </div>
+      <div class="mb-3">
+        <label for="passportName" class="form-label">Exact name as it appears</label>
+        <input type="text" class="form-control" id="passportName" name="passportName"
+          placeholder="Your exact name as it appears in the passport">
+      </div>
+        
+        
+        
+        
+<!--       Passport Number   Date Issued    Date Expires -->
+        
+        <div class="mb-3">
+  <label for="passportNumber" class="form-label-inline">Passport Number</label>
+  <input type="text" class="form-control-inline" id="passportNumber" name="passportNumber" placeholder="Your passport number">
+            <span class="separator"> </span>
+  <label for="dateIssued" class="form-label-inline">Date Issued</label>
+  <input type="text" class="form-control-inline" id="dateIssued" name="dateIssued" placeholder="Your date issued">
+            <span class="separator"> </span>
+  <label for="dateExpires" class="form-label-inline">Date Expires</label>
+  <input type="text" class="form-control-inline" id="dateExpires" name="dateExpires" placeholder="Your date expires">
+            
+</div>
+        
+        
+<!--       Date of Birth   Age    Place of Birth  Citizen of -->
+        
+     
+        <div class="mb-3">
+  <label for="dateOfBirth" class="form-label-inline">Date Of Birth</label>
+  <input type="date" class="form-control-inline" id="dateOfBirth" name="dateOfBirth">
+            <span class="separator"> </span>
+  <label for="age" class="form-label-inline">Age</label>
+  <input type="age" class="form-control-inline" id="age" name="age" placeholder="Your age">
+            <span class="separator"> </span>
+  <label for="placeOfBirth" class="form-label-inline">Place Of Birth</label>
+  <input type="text" class="form-control-inline" id="placeOfBirth" name="placeOfBirth" placeholder="Your place of birth">
+             <span class="separator"> </span>
+  <label for="citizen" class="form-label-inline">Citizen of</label>
+  <input type="text" class="form-control-inline" id="citizen" name="citizen" placeholder="Your citizenship">
+        </div>
+        
+        
+        
+<!--        CONDITIONS-->
+        
+  <div class="mb-3">
+      
+      <a href="https://www.americasbestracing.net/lifestyle/2023-beginners-guide-the-kentucky-derby" target="_blank">See all conditions for all the trips</a>
+
+</div>
+
+        
+<!--        AGREE-->
+      <div class="mb-3">
+        <label for="bookingTerms" class="form-label">
+          <input type="checkbox" id="bookingTerms" name="bookingTerms" value="agreed"> I agree to all booking terms 
+          conditions
+        </label>
+      </div>
+        
+<!--        SIGNATURE-->
+
+        <div>
+        <p>Signature</p>
+            <hr class="thick-hr">
+        <p>(Please sign the printed form before mailing)</p>
+      
+          
+ <!--          SUBMIT-->
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const registrationForm = document.getElementById('registrationForm');
+    const conditionsLink = document.querySelector('.conditions-link');
+
+    registrationForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      // Handle form submission here
+      console.log('Form submitted!');
+    });
+
+    conditionsLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      // Handle conditions link click here
+      console.log('Conditions link clicked!');
+    });
+  </script>
+</body>
+
+</html>
